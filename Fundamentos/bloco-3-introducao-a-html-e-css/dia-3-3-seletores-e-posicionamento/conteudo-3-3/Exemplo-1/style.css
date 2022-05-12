@@ -1,0 +1,11 @@
+img{
+    width: 500px;
+}
+.span{
+    color: blue;
+}
+.paragrafos{
+    widht: 80%;
+    height: 300px;
+    overflow: auto;
+}

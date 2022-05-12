@@ -1,0 +1,54 @@
+*Sistema Operacional Unix:
+- Desenvolvido por Ken Thompson e Dennis Ritchie nos anos 60;
+- Uso de linguagem de programação C;
+- Suporte a Multiusuários;
+- Multitarefas (Multi Tasking);
+- Sistemas Operacionais baseados em Unix: Linux e MacOS.
+
+*O sistema Unix é montado em 3 níveis: Kernel, Shell e Aplicativos.
+#Kernel (Núcleo): responsável por ser o elo do hardware (parte física) com o software (parte lógica) do computador. Assim que você liga o PC, o Kernel é acionado e começa a detectar todos os hardwares que ele possui e o que precisa para funcionar (Monitor, placa de vídeo, etc). Depois que o sistema operacional é carregado, o Kernel assume outras funções: gerenciar os processos, os arquivos, a memória e os dispositivos periféricos, fazendo com que ele seja o "organizador" de tudo o que acontece na máquina.
+
+#Shell: funciona como mediador entre o usuário e o Kernel do sistema. Quando o usuário digita um comando, o shell analisa ocomando e solicita ao Kernel a execução das ações correspondentes ao comando em questão.
+*Interfaces do Shell:
+- Comand Line Interface: Interface da linha de comando.
+- Graphic User Interface: Interface gráfica de usuário.
+*Tipos de Shell:
+- SH: Bourne Shell;
+- BASH: Bourne again Shell;
+- CSH: C Shell;
+- TCSH: Tenex C Shell;
+- ZSH: Zero Shell.
+
+#Aplicativos: softwares que os usuários podem utilizar e a maioria dos comandos do Unix.
+
+#Processos e Arquivos
+*Processos: tudo que você faz no Unix é um processo. Execução de tarefas ou comandos é interpretada pelo Unix como um processo. Cada processo possui um PID.
+*PID (Process Identifier): carrega as seguintes informações:
+- Usuário proprietário do processo;
+- Sessão do Shell;
+- Estado atual (Funcionando, suspenso ou aguardando);
+- Linha de comando utilizada, etc.
+*Arquivos: diretórios, arquivos, dispositivos, etc. O sistema de arquivos do Unix é organizado em uma hierarquia de raiz. O nível mais alto do sistema de arquivos é o "/" ou Diretório Raiz (Root Directory).
+
+# Figura 1 #
+
+* Informações dos Arquivos
+
+# Figura 2 #
+
+*Hierarquia de Arquivos no Unix
+
+# Figura 3 #
+
+/: Diretório Raiz;
+Boot: Arquivos de Configuração para inicialização;
+Bin: Aplicativos binários;
+Dev: Arquivos do dispositivo;
+Etc: Scripts de inicialização;
+Home: Diretórios home para diferentes usuários;
+Proc: Diretório dinâmico especial. Mantém informações sobre o estado do sistema;
+Root: Diretório home do usuário Root;
+Sbin: Binários do sistema importantes;
+TMP: Arquivos temporários;
+USR: Aplicativos e arquivos disponíveis para todos os usuários (maioria);
+VAR: Arquivos variáveis.

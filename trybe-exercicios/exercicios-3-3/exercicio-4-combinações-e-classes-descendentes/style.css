@@ -1,0 +1,68 @@
+/*Todos os itens de lista ordenada tenham cor de fundo amarelas*/
+ol li{
+    background-color: yellow;
+}
+/*Se a numeração for par: cor da fonte verde, se ímpar::
+text-transform maiusculo.*/
+ol li:nth-of-type(even){
+    color: green;
+}
+ol li:nth-of-type(odd){
+    text-transform: uppercase;
+}
+/*Todas as tags Header de cor vermelha*/
+h1, h2, h3, h4, h5, h6{
+    color: red;
+}
+/*Se algum Header for em itálico, aumentar tamanho em 40px e
+acrescentar borda de 1px preta sólida*/
+h1 em, h2 em, h3 em, h4 em, h5 em, h6 em{
+    font-size: 40px;
+    border: 1px black solid;
+}
+/*Toda li com 20pxtamanho de fonte*/
+li{
+    font-size: 20px;
+}
+/*Todo texto em itálico dentro de uma li: font-wight negrito*/
+li em{
+    font-weight: bold;
+}
+/*3 primeiras linguagens de programação azul*/
+ul:nth-of-type(1) li:nth-of-type(1){
+    color: blue;
+}
+ul:nth-of-type(1) li:nth-of-type(2){
+    color: blue;
+}
+ul:nth-of-type(1) li:nth-of-type(3){
+    color: blue;
+}
+/*Se alguma possuir java no texto, utilize cor de fundo rosa*/
+ul:nth-of-type(1) li:nth-of-type(2){
+    background-color: pink;
+}
+ul:nth-of-type(1) li:nth-of-type(3){
+    background-color: pink;
+}
+/*cada link com uma cor diferente e em negrito ao passar o mouse*/
+ul:nth-of-type(2) li:nth-of-type(1) a:hover{
+    font-weight: bold;
+    color: orange;
+}
+ul:nth-of-type(2) li:nth-of-type(2) a:hover{
+    font-weight: bold;
+    color: greenyellow;
+}
+ul:nth-of-type(2) li:nth-of-type(3) a:hover{
+    font-weight: bold;
+    color: black;
+}
+ul:nth-of-type(2) li:nth-of-type(4) a:hover{
+    font-weight: bold;
+    color: yellow;
+}
+ul:nth-of-type(2) li:nth-of-type(5) a:hover{
+    font-weight: bold;
+    color: green;
+}

@@ -1,0 +1,55 @@
+Internet - Entendendo como ela funciona
+*A internet foi criada em 1969 e se chamava Arpanet;
+- www - World Wide Web;
+Cliente: aplicação que está conectada à Internet. Ex: navegador de Internet;
+IP (Internet Protocol): um endereço IP identifica uma rede ou dispositivo na internet;
+Servidor: super computador conectado à Internet, sua principal função é armazenar, processar e entregar páginas web para os Clientes;
+MAC address (Media Access Control): endereço físico e único, que é associado à interfaces de comunicação utilizadas em dispositivos de rede;
+TCP/IP (Transmission Control Protocol)(Internet Protocol): o TCP é responsável por definir como diferentes aplicações se comunicam na rede e também em como os dados enviados serão divididos em pacotes, e o IP define como os dados divididos em pacotes devem ser enviados para chegar corretamete ao destinatário;
+ISP (Internet Service Provider): providor de Internet;
+DNS (Domain Name System): usado para relacionar o endereço nominal (ex:google.com) com o endereço IP;
+Port Number: número de 16 bits utilizado para identificar uma porta específica no servidor, e está sempre associado ao endereço IP;
+Host: qualquer computador conectado à rede, seja como Cliente, servidor ou qualquer outro tipo de dispositivo;
+HTTP (Hyper-text Transfer Protocol): protocolo utilizado para a comunicação entre navegadores e servidores na Internet;
+URL (Uniform Resource Locators): identifica um recurso web específico.
+
+#Modelo Cliente-Servidor
+Cliente >REQUISIÇÃO> Servidor
+Servidor >RESPOSTA> Cliente
+
+HTML (Hyper text markup language): responsável por definir a estrutura da página web;
+CSS (Cascading Style Sheets): responsável por definir a aparência da página web;
+JavaScript: responsável por definir as interações com o usuário da página web;
+
+Servidor: recebe as requisições HTTP do cliente de uma porta específica, sempre associada a um endereço IP e envia a resposta via HTTP. Todos os dados que viajam entre o cliente e o servidor são enviados através da rede Internet usando o protocolo TCP/IP;
+
+Banco de dados: aplicação web onde a informação é armazenada de forma acessível, gerenciável e em constante atualização.
+
+Balanceador de carga: termo genéricopara uma série de algoritmos que distribuem as requisições para o servidor. Os dois algoritmos mais conhecidos são: Round Robin e Least Connections;
+
+# Imagem 1 #
+
+Serviços: cada serviço tem uma funcionalidade, como autenticação de usuário ou serviço de bo servidor Web da sua aplicação em múltiplos serviços;
+
+CDN (Content Delivery Network): rede de distribuição de conteúdo, o CDN é um sistema de distribuição de servidores "proxy";
+Proxy: podemos entender como um servidor intermediário entre o cliente e o servidor. Ex: Akamai.
+
+#O Protocolo HTTP
+SSL (Secure Socket Layer): mecanismo de segurança que adiciona camada de seguança ao protocolo HTTP tornando HTTPS;
+HTTP Headers: contém metadata (dados sobre dados) que incluem o tipo de requisição (GET,POST,PUT,DELETE), o caminho URL, o endereço de IP dentre outros. Response Headers:
+- Content-Type: text/plain especifica como os dadossão representados;
+- Server: servidor web para onde as requisições estão sendo feitas;
+- Status:Forma padrão para o servidor comunicar ao cliente sobre o resultado da requisição;
+- Host: host da aplicação;
+
+HTTP Body: refere-se ao corpo da mensagem que está sendo transmitida;
+
+Métodos HTTP: são os verbos que dizem ao servidor o que fazer com os dados no URL. Os exemplos mais comuins são:
+-GET: o mais comum, é utilizado para ler informações encaminhadas pelo servidor para uma URL específica.As requisições GET são apenas para leitura, o que significa que os dados nunca poderão ser modificados no servidor. Requisiões GET são respondidas com status 200 (OK) se o recurso que estamos querendo acessar for encontrado com sucesso, ou 404 (NOT FOUND) se a página não for encontrada;
+-POST: utilizado para criar um novo recurso como um formulário para login. Requisições POST são retornadas com o status code 201 (CREATED) e um novo caminho no header com o link do recurso criado;
+-PUT: utilizado para atualizar ou criar um novo recurso identificado pelo URL. Resposta 200(OK) ou 404(NOT FOUND);
+-DELETE: é utilizado para deletar um recurso identificado pelo URL. Resposta 200(OK) ou 404(NOT FOUND);
+
+#REST (Representational State Transfer): estilo de arquitetura utilizado no design de aplicações Web. As regras do REST podemos destacar:
+*Interface Uniforme;
+*Stateless;

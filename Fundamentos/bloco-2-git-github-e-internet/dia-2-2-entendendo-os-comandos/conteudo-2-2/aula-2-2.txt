@@ -1,0 +1,33 @@
+# Lista de comandos da aula 2.2
+git branch novabranch: cria uma nova branch;
+O * indica qual a branch está sendo trabalhada no momento;
+git checkout novabranch: sai da branch atual e vai para a nova branch selecionada;
+git merge outrabranch: a partir da branch master (main) mescla o conteúdo com a branch escolhida;
+git branch -d branch: apaga branch selecionada;
+git checkout -b novabranch: cria e direciona o * para nova branch;
+ls -la: lista arquivos e diretórios inclusive os arquivos .git;
+git branch: mostra a lista de branchs;
+git clone urldogithub: copia um repositório git já existente;
+git log: mostra o histórico de commits em ordem cronológica inversa, o mais recente está no início;
+*hash: string hexadecimal de 40 caracteres que identifica um commit;
+git rm arquivo: apaga arquivo do git, precisa ser commitado;
+git log --diff-filter=D --summary: mostra commits apagados (só git log mostrou também);
+git checkout 4primeirosdigitosdohash~1 arwquivo: torna valido novamente arquivo do commit/hash, precisa ser commitado;
+
+# Git Ignore
+touch .gitignore: é necessárioo ponto para que seja um arquivo oculto;
+cat > .gitignore: adiciona arquivos para serem ignorados. Ex: *.txt ignora todos os arquivos txt;
+cat >> .gitignore: adiciona mais informações para serem ignoradas;
+cat >> .gitignore: diretorio/ ignora todo o subdiretório;
+*toptal.com/developers/gitignore cria arquivo git ignore
+
+# Git push, pull, fetch
+git push -u origin master (git push origin master funcionou);
+git push: quando vem de git clone;
+git fetch: verifica se há modificações do repositório remoto e a minha branch;
+git pull: verifica se há atualização e "puxa" as alterações feitas no repositório remoto;
+
+#Pull Request no Github
+- Navegue até a página principal do repositório no Github;
+- Menu Branch - Create new branch;
+- Pull request;

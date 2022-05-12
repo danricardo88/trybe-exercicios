@@ -1,0 +1,1 @@
+Neste dia aprendemos vários significados de protocolos da Internet com TCP/IP, HTTP, o que é um Cliente, servidor etc. Aprendemos também a utilizar o comando curl para verificar conectividade, além de transmitir dados via terminal.

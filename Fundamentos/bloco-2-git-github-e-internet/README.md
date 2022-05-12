@@ -1,0 +1,1 @@
+Neste bloco aprendemos a manipular e trabalhar com comandos do terminal aprendidos no primeiro bloco em conjunto com os comandos de Git. Aprendemos a como movimentar dados entre um repositório local (Git) e um remoto (Github), além de conhecermos alguns fundamentos de Internet.

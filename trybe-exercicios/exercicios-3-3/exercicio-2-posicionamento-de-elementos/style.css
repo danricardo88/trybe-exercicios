@@ -1,0 +1,35 @@
+/*Posiciona o super-mario acima do goomba*/
+.super-mario {
+    width: 200px;
+    left: 50px;
+    position: absolute;
+  }
+  
+  .goomba {
+    width: 100px;
+    top: 400px;
+    left: 100px;
+    position: absolute
+  }
+/*Posiciona o balão próximo ao bowser*/  
+  .baloon {
+      left: 300px;
+      top: 150px;
+      z-index: 1;
+    position: absolute
+  }
+/*Posiciona a frase dentro do balão*/  
+  .speach {
+      left: 320px;
+      top: 190px;
+    font-size: 25px;
+    z-index: 2;
+    position: absolute
+  }
+  
+  .bowser {
+    width: 200px;
+    left: 600px;
+    top: 300px;
+    position: absolute
+  }

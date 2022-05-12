@@ -1,0 +1,1 @@
+Neste dia aprendemos mais comandos do Git, criamos um repositório de todo conteúdo aprendido até o momento na Trybe, fizemos o primeiro pull request no Github e exercícios envolvendo commits, branchs e merges.
