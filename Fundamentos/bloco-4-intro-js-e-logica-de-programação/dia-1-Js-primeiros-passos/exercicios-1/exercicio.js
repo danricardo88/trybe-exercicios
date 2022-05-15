@@ -207,7 +207,7 @@ if (produto >= 0 && revenda >= 0) {
 
 // ------------------> EXERCICIO 11 <------------------
 
-let inss = 0.11;
+/*let inss = 0.11;
 let ir = 0.075;
 
 let salarioBruto = 3000.00;
@@ -219,8 +219,76 @@ If ( salarioBruto >= 2594.93 && salarioBruto <= 5189.82 ) {
 
   salarioLiquido = (salarioLiquido - (salarioLiquido * ir));
 
-  console.log("Meu salário liquido é R$ " ${salarioLiquido - 142.80} );
+  console.log("Meu salário liquido é R$ " ${salarioLiquido - 142.80});
 
+
+}*/
+
+const impostosInss1 = 0.08;
+const impostosInss2 = 0.09;
+const impostosInss3 = 0.11;
+const impostosInss4 = 570.88;
+
+const salarioBruto = 100000.00;
+let valorInss;
+let salarioLiquido;
+
+if ( salarioBruto <= 1556.94 ) {
+
+  valorInss = impostosInss1;
+  salarioLiquido = salarioBruto - (salarioBruto * impostosInss1);
+
+} else if ( salarioBruto <= 2594.92 ) {
+
+  valorInss = impostosInss2;
+  salarioLiquido = salarioBruto - (salarioBruto * impostosInss2);
+
+} else if ( salarioBruto <= 5189.82 ) {
+
+  valorInss = impostosInss3;
+  salarioLiquido = salarioBruto - (salarioBruto * impostosInss3);
+
+} else {
+
+  valorInss = impostosInss4;
+  salarioLiquido = salarioBruto - impostosInss4;
 
 }
+
+const ir1 = 0;
+const ir2 = 0.075;
+const ir3 = 0.15;
+const ir4 = 0.225;
+const ir5 = 0.275;
+
+let valorIr;
+
+if ( salarioLiquido <= 1903.98 ) {
+
+  valorIr = ir1;
+  
+
+} else if ( salarioLiquido <= 2826.65 ) {
+  
+  valorIr = ir2;
+  salarioLiquido = salarioLiquido - (salarioLiquido * ir2 - 142.80);
+
+} else if ( salarioLiquido <= 3751.05 ) {
+
+  valorIr = ir3;
+  salarioLiquido = salarioLiquido - (salarioLiquido * ir3 - 354.80);
+
+} else if ( salarioLiquido <= 4664.68 ) {
+
+  valorIr = ir4;
+  salarioLiquido = salarioLiquido - (salarioLiquido * ir4 - 636.13 );
+
+} else  {
+
+  valorIr = ir5;
+  salarioLiquido = salarioLiquido - (salarioLiquido * ir5 - 896.36 );
+ 
+}
+
+    console.log( " Meu salário é de " + salarioLiquido.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }))
 
