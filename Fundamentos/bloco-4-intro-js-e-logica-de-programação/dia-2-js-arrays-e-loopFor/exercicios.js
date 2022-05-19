@@ -1,4 +1,4 @@
-//let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+/*let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 
 ////////////////////////////////////////1////////////////////////////////////////////
@@ -33,9 +33,11 @@ if( media > 20 ) {
 }else { 
   console.log("Valor menor que 20 =(")
 }
+*/
 ////////////////////////////////////////////5////////////////////////////////////////
 
-let maior = 0;
+/*let maior = ;
+
 for( let index = 0; index < numbers.length; index += 1){
   if( numbers[index] > maior){
     maior = numbers[index];
@@ -43,6 +45,7 @@ for( let index = 0; index < numbers.length; index += 1){
 }
 
 console.log(maior)
+/*
 //////////////////////////////////////////////6//////////////////////////////////////
 
 let menor = 0;
@@ -114,7 +117,7 @@ for( let index = 1; index < numbers.length; index += 1) {
 console.log(numbers)
 
 /////////////////////////////////////////////BONUS///////////////////////////////////////
-*/
+*//*
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let multiplos = [];
 
@@ -131,4 +134,4 @@ for(let index = 0; index < numbers.length; index += 1){
 }
 
 console.log(multiplos)
-
+*/
