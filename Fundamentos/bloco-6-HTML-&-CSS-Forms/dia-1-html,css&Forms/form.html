@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Formulário para ganhar 2 anos de fraldas grátis !</h1>
+  <form action="" method="get" class="formularioExercicio">
+    <fieldset>
+
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" placeholder="Digite seu nome completo" maxlength="40" minlength="10" required>      
+      <br>
+
+      <label for="email">Seu e-mail:</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu e-mail" maxlength="50"   minlength="10" required>
+      <br>
+
+      <label for="marca1">Drysec Baby</label>
+      <input type="radio" id="marca1" className="radios" name="marcas" value="Drysec" required>
+
+      <label for="marca2">Turma da Monica</label>
+      <input type="radio" id="marca2" className="radios" name="marcas" value="Turma da Monica" required>
+
+      <label for="marca3">Huggies</label>
+      <input type="radio" id="marca3" className="radios" name="marcas" value="Huggies" required>
+
+      <label for="marca4">Pampers</label>
+      <input type="radio" id="marca4" className="radios" name="marcas" value="Pampers" required>
+      <br>
+
+      <label for="why">Por que você quer ganhar dois anos de fraldas? </label>
+      <br />
+      <textarea name="why" id="why" cols="60" rows="10" placeholder=>Digite sua resposta vencedora aqui</textarea>
+      <br />
+
+      <label for="local">Qual a melhor local para retirada?</label>
+      <input type="local" id="local">
+      <br />
+
+      <label for="promo">Gostaria de receber outros itens para o baby ? </label>
+
+      <input type="checkbox" name="promo" id="promo">
+      <br />
+
+      <label for="agreement">Concordo que imagens da minha babê poderão ser usadas na divulgação de concursos futuros.</label>
+
+      <input type="checkbox" name="agreement" id="agreement" required>
+
+
+    </fieldset>
+    <button type="submit" id="submit-btn" >Participar do concurso QUERO FRALDAS</button>
+  </form>
+    <script src="./script.js"></script>
+</body>
+</html>
